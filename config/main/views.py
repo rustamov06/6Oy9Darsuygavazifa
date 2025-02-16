@@ -122,7 +122,7 @@ def user_register(request):
             user = User.objects.create_user(username=username, email=email, password=password1)
             messages.success(request, "Akount muofiqiyatli qo'shildi !\n"
                                       "Iltimos login qiling !")
-            redirect("user_login")
+        return redirect("user_login")
     return render(request, 'register.html')
 
 def user_logout(request):

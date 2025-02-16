@@ -2,7 +2,7 @@
 
 {% block main %}
 
-<style>
+<style xmlns="http://www.w3.org/1999/html">
 
 .left-panel {
     background: #3a3a3a; /* Och kulrang */
@@ -76,7 +76,10 @@
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" class="btn btn-outline-danger">Create new</button>
+                    <a href="{% url 'user_register' %}" class="btn btn-outline-danger fw-bold text-body">
+                        <u>Create new</u>
+                    </a>
+
                   </div>
 
                 </form>
