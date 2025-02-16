@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz">
+<head>
+  {% include 'components/_stayles.html'%}
+</head>
+<body>
+    <header>
+    {% include 'components/_header.html'%}
+    </header>
+
+    <main>
+        {% block main%}
+        {% endblock main%}
+    </main>
+
+
+    <footer>
+    {% include 'components/_footer.html'%}
+    </footer>
+
+
+    {% include 'components/_scripts.html'%}
+
+</body>
+</html>
